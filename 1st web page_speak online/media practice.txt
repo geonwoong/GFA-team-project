@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>lesson of media</title>
+    <link rel="stylesheet" href="css/style.css">
+<style>
+.catalog{
+  width: 90%;
+  margin:100px auto;
+
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.block{
+  width: 24%;
+  height: 200px;
+  margin-bottom: 20px;
+
+  border: 1px solid;
+  
+}
+@media screen and (max-width: 1000.98px) {
+  .block {
+    width: 24%;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 750.98px) {
+  .block {
+    width: 45%;
+    height: 150px;
+  }
+}
+@media (max-width: 575.98px){
+  .catalog{
+  display: flex;
+ flex-direction:column;
+  }
+  .block{
+    width:90%;
+    height:200px;
+    margin: 0 auto;
+    margin-bottom:20px;
+  }
+  
+}
+</style>
+  </head>
+  <body>
+    <div class="catalog">
+      <div class="block"> </div>
+      <div class="block"> </div>
+      <div class="block"> </div>
+      <div class="block"> </div>
+      <div class="block"> </div>
+      <div class="block"> </div>
+      <div class="block"> </div>
+      <div class="block"> </div>
+    </div>
+  </body>
+</html>
+
